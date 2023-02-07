@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="shortcut icon" href="assets/images/icon.png" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="stylesheet" href="css/reset.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <title>Encriptador de Texto | Oracle | Alura Latam 2022</title>
+    </head>
+    <body>
+        <canvas id="canvas"></canvas>
+        <header>
+            <div class="logo">
+                <img src="images/Logo.png" alt="Alura logo">
+            </div>
+        </header>
+        <main>
+            <div class="main-left">
+            
+            <div class="input-container">
+                <!--<label class="label">
+                    <div class="toggle">
+                        <input class="toggle-state" type="checkbox" name="check" value="check">
+                        <div class="indicator"></div>
+                    </div>
+                </label>-->
+                <textarea id="input" spellcheck="false" placeholder="Ingrese el texto aquí" autofocus></textarea>
+                <div class="message" id="message">
+                    <span>!</span><p >Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="buttons">
+                    <button class="btn primary" id="btn-encrypt">Encriptar</button>
+                    <button class="btn secondary" id="btn-decrypt">Desencriptar</button>
+                </div>
+            </div>
+            </div>
+            <div class="main-right">
+                <div class="screen-container hidden">
+                    <div id="screen"></div>
+                    <button id="copy" class="btn secondary copy">Copiar</button>
+                </div>
+                <div class="center">
+                    <div class="search-image">
+                        <img src="images/Muñeco.png" alt="">
+                    </div>
+                    <div class="empty-text">
+                        <h3>Ningún mensaje fue encontrado</h3>
+                        <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-center">
+                    <p>Diseñado por <a href="https://www.aluracursos.com/" target="__blank">Alura</a> y construido por Claudia Castiglione</p>
+                    <ul class="icons">
+                        <li class="icon"><a href="https://github.com/Pool1541" target="__blank"><i class="fa-brands fa-github"></i></a></li>
+                        <li class="icon"><i class="fa-brands fa-linkedin"></i></li>
+                        <li class="icon"><i class="fa-brands fa-instagram"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </footer> 
+        <script src="js/encriptador.js"></script>
+        <!-- FontsAwesome CDN -->
+        <script src="https://kit.fontawesome.com/3feef57c63.js" crossorigin="anonymous"></script>
+    </body>
+</html>
+
